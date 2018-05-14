@@ -18,11 +18,11 @@ let a = this.props.Profile.Name;
         <div className="header">
           My Name is {this.props.Profile.Name}, I am
           {this.props.Profile.startAge} Years old <br />
-          <a href="#" onClick={this.props.older()}>
+          <a href="#" onClick={() => this.props.older()}>
             Click
           </a>
           Me to see me grow old <br />
-          <a href="#" onClick={this.props.younger()}>
+          <a href="#" onClick={() => this.props.younger()}>
             Click
           </a>
           Me to see me grow Younger
@@ -32,7 +32,7 @@ let a = this.props.Profile.Name;
       return (
         <div className="header">
           Bro u just made me 30 years old. Stop doing It...<br />
-          <a href="#" onClick={this.props.reset()}>
+          <a href="#" onClick={() => this.props.reset()}>
             Click
           </a>
           to reset my age. <br />
